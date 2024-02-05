@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sim Config Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="modal">
+      <button id="myBtn">Open Configurator</button>
+      <div id="configModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="configForm">
+            <h2>Required Components*</h2>
+            <label
+              ><input type="checkbox" name="components" value="chassis" />
+              Chassis</label
+            ><br />
+            <label
+              ><input type="checkbox" name="components" value="wheel_base" />
+              Wheel Base</label
+            ><br />
+            <label
+              ><input type="checkbox" name="components" value="wheel" />
+              Wheel</label
+            ><br />
+            <label
+              ><input type="checkbox" name="components" value="pedals" />
+              Pedals</label
+            ><br />
+            <label
+              ><input type="checkbox" name="components" value="shifter" />
+              Shifter</label
+            ><br />
+            <h2>Budget</h2>
+            <input
+              type="range"
+              name="budget"
+              min="500"
+              max="15000"
+              value="500"
+              step="50"
+              class="slider"
+              id="budgetRange"
+            />
+            <p>Value: $<span id="budgetValue">7500</span></p>
+            <h2>Location</h2>
+            <label
+              ><input type="radio" name="location" value="unitedstates" />
+              United States</label
+            ><br />
+            <label
+              ><input type="radio" name="location" value="europe" />
+              Europe</label
+            ><br />
+            <h2>Preffered Brands</h2>
+            <label
+              ><input type="checkbox" name="pref-brand" value="fanatec" />
+              Fanatec</label
+            ><br />
+            <label
+              ><input type="checkbox" name="pref-brand" value="moza" />
+              Moza</label
+            ><br />
+            <label
+              ><input type="checkbox" name="pref-brand" value="thrustmaster" />
+              Thrustmaster</label
+            ><br />
+            <label
+              ><input type="checkbox" name="pref-brand" value="asatek" />
+              Asatek</label
+            ><br />
+            <label
+              ><input type="checkbox" name="pref-brand" value="simucube" />
+              Simucube</label
+            ><br />
+            <input type="button" id="generateBtn" value="Generate" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="loading-modal">
+      <div id="loadingModal" class="modal">
+        <div class="modal-content">
+          <h2>Loading your configuration...</h2>
+          <div class="loader"></div>
+          <!-- You can style this loader with CSS -->
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

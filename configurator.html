@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sim Config Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles-v2.css" />
+    <link rel="stylesheet" href="confighero.css" />
+    <link rel="stylesheet" href="configurator.css" />
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="topnav">
+        <div class="logo">Sim Config</div>
+        <div class="searchbar">
+          <input type="text" placeholder="Search..." class="search-nav" />
+        </div>
+        <div class="topnav-buttons">
+          <button class="wishlist">
+            <img src="wishlist.svg" alt="" class="nav-svg" />Wishlist
+          </button>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnav-browse">Browse</button>
+        <button class="subnav-btn">Blog</button>
+        <button class="subnav-btn subnav-active">Configurator</button>
+        <button class="subnav-btn">About</button>
+        <button class="subnav-btn">Contact</button>
+      </div>
+      <div class="browse-dropdwn">
+        <div class="by-product">
+          <button class="browse-btn">Wheel Base</button>
+          <button class="browse-btn">Steering Wheel</button>
+          <button class="browse-btn">Pedals</button>
+          <button class="browse-btn">Chassis</button>
+          <button class="browse-btn">Shifter</button>
+          <button class="browse-btn">Accessories</button>
+        </div>
+      </div>
+    </section>
+    <section id="config-section">
+      <div class="config-cont">
+        <form id="configForm" class="form-cont">
+          <div class="form-center">
+            <div class="left-form">
+              <h2 class="form-components">Required Components</h2>
+              <label class="form-label"
+                ><input
+                  type="checkbox"
+                  name="components"
+                  value="chassis"
+                  class="form-input"
+                />
+                Chassis</label
+              ><br />
+              <label class="form-label"
+                ><input
+                  type="checkbox"
+                  name="components"
+                  value="wheel_base"
+                  class="form-input"
+                />
+                Wheel Base</label
+              ><br />
+              <label class="form-label"
+                ><input
+                  type="checkbox"
+                  name="components"
+                  value="wheel"
+                  class="form-input"
+                />
+                Wheel</label
+              ><br />
+              <label class="form-label"
+                ><input
+                  type="checkbox"
+                  name="components"
+                  value="pedals"
+                  class="form-input"
+                />
+                Pedals</label
+              ><br />
+              <label class="form-label"
+                ><input
+                  type="checkbox"
+                  name="components"
+                  value="shifter"
+                  class="form-input"
+                />
+                Shifter</label
+              ><br />
+              <h2>Budget</h2>
+              <input
+                type="range"
+                name="budget"
+                min="500"
+                max="15000"
+                value="500"
+                step="50"
+                class="slider"
+                id="budgetRange"
+              />
+              <p>Value: $<span id="budgetValue">7500</span></p>
+            </div>
+            <div class="right-form">
+              <h2 class="form-options">More Options</h2>
+              <label
+                ><input
+                  type="checkbox"
+                  name="moreOptions"
+                  value="nobundles"
+                  class="form-input"
+                />
+                Don't include bundles</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="moreOptions"
+                  value="seatincluded"
+                  class="form-input"
+                />
+                Show only chassis with seats included</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="moreOptions"
+                  value="playstation"
+                  class="form-input"
+                />
+                Playstation Compatibility</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="moreOptions"
+                  value="xbox"
+                  class="form-input"
+                />
+                Xbox Compatibility</label
+              ><br />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

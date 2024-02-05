@@ -1,0 +1,48 @@
+.config-cont {
+  margin-top: 160px;
+  height: 80vh;
+}
+.title-cont {
+  display: flex;
+  justify-content: center;
+}
+.form-title {
+  background-color: #1997ff;
+  padding: 10px 30px;
+  color: white;
+
+  border-radius: 3px;
+}
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  accent-color: black;
+}
+
+input.form-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+label.form-label {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-center {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wheel Results</title>
+    <link rel="stylesheet" href="styles-v2.css" />
+    <link rel="stylesheet" href="productsDemo.css" />
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="topnav">
+        <div class="logo-cont">
+          <img src="/images/logo.png" alt="" class="logo" />
+        </div>
+        <div class="searchbar">
+          <input type="text" placeholder="Search..." class="search-nav" />
+        </div>
+        <div class="topnav-buttons">
+          <button class="wishlist">
+            <img src="wishlist.svg" alt="" class="nav-svg" />Wishlist
+          </button>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnav-browse">Browse</button>
+        <button class="subnav-btn">Blog</button>
+        <button class="subnav-btn">Configurator</button>
+        <button class="subnav-btn">About</button>
+        <button class="subnav-btn">Contact</button>
+      </div>
+      <div class="browse-dropdwn">
+        <div class="by-product">
+          <button class="browse-btn">Wheel Base</button>
+          <button class="browse-btn">Steering Wheel</button>
+          <button class="browse-btn">Pedals</button>
+          <button class="browse-btn">Chassis</button>
+          <button class="browse-btn">Shifter</button>
+          <button class="browse-btn">Accessories</button>
+        </div>
+      </div>
+    </section>
+    <form id="filtersForm" class="filters-form">
+      <label for="brand" class="brand-label">Brand:</label>
+      <select id="brand">
+        <option value="">All Brands</option>
+        <option value="Moza">Moza</option>
+        <option value="Fanatec">Fanatec</option>
+      </select>
+
+      <label for="maxPrice" class="maxprice-label">Max Price: $</label>
+      <input type="number" id="maxPrice" placeholder="Max Price" step="100" />
+
+      <label for="wheelType" class="wheeltype-label">Wheel Type:</label>
+      <select id="wheelType">
+        <option value="">All Types</option>
+        <option value="GT">GT</option>
+        <option value="Standard">Standard</option>
+        <option value="Formula">Formula</option>
+        <option value="Drift">Drift</option>
+        <option value="Rally">Rally</option>
+      </select>
+
+      <button type="submit" class="apply-filters">Apply Filters</button>
+      <span id="currentCountInfo"></span>
+      <span id="totalCountInfo"></span>
+    </form>
+
+    <div id="wheelsContainer"></div>
+    <button id="prevPage">Previous</button>
+    <button id="nextPage">Next</button>
+    <div id="paginationInfo">
+      <span id="currentPageInfo"></span>
+      <span id="totalPagesInfo"></span>
+      <span id="currentCountInfo"></span>
+      <span id="totalCountInfo"></span>
+    </div>
+
+    <script src="productsDemo.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

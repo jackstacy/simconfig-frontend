@@ -1,0 +1,141 @@
+body {
+  font-family: Titillium Web;
+}
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #e9e9e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+.logo {
+  width: 700px;
+}
+.logo-cont {
+  flex: 2;
+}
+.search-nav {
+  height: 35px;
+  width: 100%;
+  border: none;
+  font-family: Titillium Web;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.searchbar {
+  flex: 2;
+  display: none;
+}
+.topnav-btns {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wishlist {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  letter-spacing: 2px;
+}
+.nav-svg {
+  margin-right: 10px;
+}
+
+.subnav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #e9e9e9;
+  top: 100px;
+  border-top: 2px solid #d5d5d5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+}
+.subnav-btn {
+  height: 50px;
+  width: 120px;
+  font-family: Titillium Web;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.subnav-btn:hover {
+  background-color: white;
+  text-decoration: underline;
+}
+.subnav-browse {
+  height: 50px;
+  width: 120px;
+  font-family: Titillium Web;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.subnav-sel {
+  background-color: white;
+  text-decoration: underline;
+}
+.browse-dropdwn {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  top: 150px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.by-product {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  background-color: white;
+}
+.browse-btn {
+  height: 50px;
+  width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Titillium Web;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid #1997ff;
+  border-radius: 5px;
+}
+.browse-btn:hover {
+  background-color: #1997ff;
+  color: white;
+  cursor: pointer;
+}
+.browse-btn:active {
+  background-color: #4caeff;
+}
+
+.subnav:hover .browse-dropdwn {
+  display: flex;
+}
+
+.subnav-active {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
